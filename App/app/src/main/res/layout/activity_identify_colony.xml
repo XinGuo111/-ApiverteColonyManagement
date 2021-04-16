@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/identifyColony"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="Identify Colony" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:text="Area:"
+        android:layout_marginBottom="5dp"/>
+
+    <Spinner
+        android:id="@+id/areaSpinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:prompt="@string/areaSpinner"/>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:text="Host:"
+        android:layout_marginBottom="5dp"/>
+
+    <Spinner
+        android:id="@+id/hostSpinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:prompt="@string/areaHost" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:text="Hive:"
+        android:layout_marginBottom="5dp"/>
+    <Spinner
+        android:id="@+id/HiveNumberSpinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:prompt="@string/spinnerHiveNumber"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:layout_marginBottom="5dp"
+        android:text="Colony:" />
+
+    <Spinner
+        android:id="@+id/colonyNumberSpinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:prompt="@string/spinnerColonyNumber" />
+
+    <Button
+        android:id="@+id/typicalInspectionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Typical inspection" />
+
+    <Button
+        android:id="@+id/pastInspectionsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check Past Inspections" />
+
+
+
+
+</LinearLayout>

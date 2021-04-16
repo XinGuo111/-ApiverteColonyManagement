@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ManageSpecialInspections">
+
+    <TextView
+        android:id="@+id/manage_special_inspection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/manage_special_inspection"
+        android:layout_centerHorizontal="true"
+        android:textSize="60dp"
+        android:textStyle="bold"
+        android:layout_marginTop="10pt"
+        android:textColor="#09AB4D"/>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swiperefresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/back"
+        android:layout_below="@+id/manage_special_inspection"
+        android:layout_marginTop="20pt"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp" >
+        <ListView
+            android:id="@+id/SpecialInspectionListview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/back"
+        android:textSize="40dp"
+        android:background="#09AB4D"
+        android:textColor="#ffffff"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

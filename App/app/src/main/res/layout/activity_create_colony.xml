@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/createPageHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="35sp"
+        android:textColor="#09AB4D"
+        android:text="@string/createColonyPageHeader"
+        />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:padding="5dp"
+        >
+
+        <TextView
+            android:id="@+id/createLocationCategoryHeader"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/colonyPagesLocationHeader"
+            android:textSize="25sp"
+            android:textColor="#09AB4D"
+            android:layout_columnSpan="2" />
+
+        <TextView
+            android:id="@+id/createAreaRow"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/colonyPagesRowArea"
+            android:textSize="20sp"
+            android:textColor="#09AB4D"
+            android:layout_columnWeight="1" />
+
+        <Spinner
+            android:id="@+id/createAreaSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_columnWeight="5" />
+
+        <TextView
+            android:id="@+id/createHostRow"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/colonyPagesRowHost"
+            android:textSize="20sp"
+            android:textColor="#09AB4D"
+            android:layout_columnWeight="1"/>
+
+        <Spinner
+            android:id="@+id/createHostSpinner"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:layout_columnWeight="5" />
+
+        <TextView
+            android:id="@+id/createHiveNumRow"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/colonyPagesRowHiveNum"
+            android:textSize="20sp"
+            android:textColor="#09AB4D"
+            android:layout_columnWeight="1"/>
+
+        <Spinner
+            android:id="@+id/createHiveNumSpinner"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:layout_columnWeight="5" />
+
+        <TextView
+            android:id="@+id/createColonyNumRow"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/colonyPagesRowColonyNum"
+            android:textSize="20sp"
+            android:textColor="#09AB4D"
+            android:layout_columnWeight="1"/>
+
+        <EditText
+            android:id="@+id/createColonyNumInput"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:hint="@string/colonyPagesInputHint"
+            android:textSize="20sp"
+            android:layout_columnWeight="5"
+            android:inputType="number"/>
+
+        <TextView
+            android:id="@+id/createSpacer1"
+            android:layout_height="20dp"
+            android:layout_width="match_parent"
+            android:layout_columnSpan="2" />
+
+        <TextView
+            android:id="@+id/createCharacteristicsCategoryHeader"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/colonyPagesCharacteristicsHeader"
+            android:textSize="25sp"
+            android:textColor="#09AB4D"
+            android:layout_columnSpan="2" />
+
+        <TextView
+            android:id="@+id/createColonySourceRow"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/colonyPagesRowColonySource"
+            android:textSize="20sp"
+            android:textColor="#09AB4D"
+            android:layout_columnWeight="1"/>
+
+        <EditText
+            android:id="@+id/createColonySourceInput"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:hint="@string/colonyPagesInputHint"
+            android:textSize="20sp"
+            android:layout_columnWeight="5"
+            android:inputType="textCapSentences|textAutoComplete"/>
+
+        <TextView
+            android:id="@+id/createQueenRow"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/colonyPagesRowQueen"
+            android:textSize="20sp"
+            android:textColor="#09AB4D"
+            android:layout_columnWeight="1"/>
+
+        <Spinner
+            android:id="@+id/createQueenSpinner"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:layout_columnWeight="5" />
+
+        <TextView
+            android:id="@+id/createGeneticsRow"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/colonyPagesRowGenetics"
+            android:textSize="20sp"
+            android:textColor="#09AB4D"
+            android:layout_columnWeight="1"/>
+
+        <Spinner
+            android:id="@+id/createGeneticsSpinner"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:layout_columnWeight="5" />
+
+        <TextView
+            android:id="@+id/createInstallationRow"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/colonyPagesRowInstallation"
+            android:textSize="20sp"
+            android:textColor="#09AB4D"
+            android:layout_columnWeight="1"/>
+
+        <Spinner
+            android:id="@+id/createInstallationSpinner"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:layout_columnWeight="5" />
+
+        <TextView
+            android:id="@+id/createColonyAddInfoRow"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/colonyPagesRowAddInfo"
+            android:textSize="20sp"
+            android:textColor="#09AB4D"
+            android:layout_columnWeight="1"/>
+
+        <EditText
+            android:id="@+id/createColonyAdditionalInfoEditText"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:hint="@string/colonyPagesInputHint"
+            android:textSize="20sp"
+            android:layout_columnWeight="5"
+            android:inputType="textCapSentences|textAutoComplete"/>
+
+        <TextView
+            android:id="@+id/createSpacer2"
+            android:layout_height="20dp"
+            android:layout_width="match_parent"
+            android:layout_columnSpan="2" />
+
+        <TextView
+            android:id="@+id/createSetupCategoryHeader"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/colonyPagesSetupHeader"
+            android:textSize="25sp"
+            android:textColor="#09AB4D"
+            android:layout_columnSpan="2" />
+
+        <TextView
+            android:id="@+id/createColonyInstallDateRow"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/colonyPagesRowInstallDate"
+            android:textSize="20sp"
+            android:textColor="#09AB4D"
+            android:layout_columnWeight="1"/>
+
+        <EditText
+            android:id="@+id/createColonyInstallDateEditText"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:hint="@string/colonyPagesInputHint"
+            android:textSize="20sp"
+            android:layout_columnWeight="5"
+            android:inputType="date"/>
+
+        <TextView
+            android:id="@+id/createColonyHiveTypeRow"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/colonyPagesRowHiveType"
+            android:textSize="20sp"
+            android:textColor="#09AB4D"
+            android:layout_columnWeight="1"/>
+
+        <Spinner
+            android:id="@+id/createHiveTypeSpinner"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:layout_columnWeight="5" />
+
+        <TextView
+            android:id="@+id/createColonyBroodChamberRow"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/colonyPagesRowBroodChamber"
+            android:textSize="20sp"
+            android:textColor="#09AB4D"
+            android:layout_columnWeight="1"/>
+
+        <Spinner
+            android:id="@+id/createBroodChamberSpinner"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:layout_columnWeight="5" />
+
+        <TextView
+            android:id="@+id/createColonyQueenExcluderRow"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/colonyPagesRowQueenExcluder"
+            android:textSize="20sp"
+            android:textColor="#09AB4D"
+            android:layout_columnWeight="1"/>
+
+        <Spinner
+            android:id="@+id/createQueenExcluderSpinner"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:layout_columnWeight="5" />
+
+        <TextView
+            android:id="@+id/createColonyAddPhotoRow"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/colonyPagesRowAddPhoto"
+            android:textSize="20sp"
+            android:textColor="#09AB4D"
+            android:layout_columnWeight="1"/>
+
+        <ImageView
+            android:id="@+id/createAddedPhotoImage"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_columnWeight="5"
+            android:contentDescription="@string/colonyPagesPhotoDescription" />
+
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/createSpacer3"
+        android:layout_height="20dp"
+        android:layout_width="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/createColonySubmitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#09AB4D"
+            android:padding="5dp"
+            android:text="@string/colonyPagesSubmitButton"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/createColonyReturnButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#09AB4D"
+            android:padding="5dp"
+            android:text="@string/colonyPagesReturnButton"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

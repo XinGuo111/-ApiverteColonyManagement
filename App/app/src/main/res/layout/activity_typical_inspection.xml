@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/identifyColony"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="Typical Inspection" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:text="Date:"
+        android:layout_marginBottom="5dp"
+        android:textSize="20dp"
+        android:textColor="#09AB4D"/>
+    <EditText
+        android:id="@+id/autoDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textAutoComplete" />
+    <EditText
+        android:id="@+id/autoTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textAutoComplete" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:text="Typical Inspection:"
+        android:layout_marginBottom="5dp"
+        android:textSize="20dp"
+        android:textColor="#09AB4D"/>
+
+    <!--<TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:text="Weather:"
+        android:layout_marginBottom="5dp"/>
+    <Spinner
+        android:id="@+id/weatherSpinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:prompt="@string/areaSpinner"/>-->
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:text="Population:"
+        android:layout_marginBottom="5dp"/>
+
+    <Spinner
+        android:id="@+id/populationSpinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:prompt="@string/areaHost" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:text="Mood:"
+        android:layout_marginBottom="5dp"/>
+    <Spinner
+        android:id="@+id/moodSpinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:prompt="@string/spinnerHiveNumber"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:layout_marginBottom="5dp"
+        android:text="Fitness:" />
+
+    <Spinner
+        android:id="@+id/fitnessSpinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:prompt="@string/spinnerColonyNumber" />
+
+
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:text="Hive bodies:"
+        android:layout_marginBottom="5dp"
+        android:textSize="20dp"
+        android:textColor="#09AB4D"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:text="Brood Chambers:"
+        android:layout_marginBottom="5dp"/>
+    <Spinner
+        android:id="@+id/broodChamberSpinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:prompt="@string/areaSpinner"/>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:text="Honey Chamber:"
+        android:layout_marginBottom="5dp"/>
+
+    <Spinner
+        android:id="@+id/honeyChamberSpinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:prompt="@string/areaHost" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:text="Mouse Guard:"
+        android:layout_marginBottom="5dp"/>
+    <Switch
+        android:id="@+id/switchMouseGuard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:textOff="No"
+        android:textOn="Yes"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:layout_marginBottom="5dp"
+        android:text="Wasp Guards:" />
+
+    <Switch
+        android:id="@+id/switchWaspGuard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:textOff="No"
+        android:textOn="Yes"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:layout_marginBottom="5dp"
+        android:text="Pollen Collector:" />
+
+    <Switch
+        android:id="@+id/switchPollenCollector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:textOff="No"
+        android:textOn="Yes"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:layout_marginBottom="5dp"
+        android:text="Hive Bottom:" />
+
+    <ToggleButton
+        android:id="@+id/toggleHiveBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:textOff="Closed"
+        android:textOn="Screened"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:text="Vents:"
+        android:layout_marginBottom="5dp"/>
+
+    <Spinner
+        android:id="@+id/ventsSpinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:prompt="@string/areaHost" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:text="Frames:"
+        android:layout_marginBottom="5dp"
+        android:textSize="20dp"
+        android:textColor="#09AB4D"/>
+
+    <EditText
+        android:id="@+id/broodEditText"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:hint="Enter Brood"
+        android:textSize="20sp"
+        android:layout_columnWeight="5"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/honeyEditText"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:hint="Enter Honey"
+        android:textSize="20sp"
+        android:layout_columnWeight="5"
+        android:inputType="number"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:text="Brood Pattern:"
+        android:layout_marginBottom="5dp"/>
+
+    <Spinner
+        android:id="@+id/broodPatternSpinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:prompt="@string/areaHost" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:text="Queen:"
+        android:layout_marginBottom="5dp"
+        android:textSize="20dp"
+        android:textColor="#09AB4D"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:text="Status:"
+        android:layout_marginBottom="5dp"/>
+    <Spinner
+        android:id="@+id/statusSpinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:prompt="@string/areaHost" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:text="Cell:"
+        android:layout_marginBottom="5dp"/>
+    <Spinner
+        android:id="@+id/cellsSpinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:prompt="@string/areaHost" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:text="Swarm Status:"
+        android:layout_marginBottom="5dp"/>
+    <Spinner
+        android:id="@+id/swarmStatusSpinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:prompt="@string/areaHost" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:text="Excluder:"
+        android:layout_marginBottom="5dp"/>
+    <Spinner
+        android:id="@+id/excluderSpinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:prompt="@string/areaHost" />
+
+    <Button
+        android:id="@+id/typicalInspectionSaveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit to Database" />
+    </LinearLayout>
+
+</ScrollView>

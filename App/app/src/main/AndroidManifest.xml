@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.apiverte_colony_management">
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="30" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:usesCleartextTraffic="true"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SpecialInspectionDetails"></activity>
+        <activity android:name=".ManageSpecialInspections" />
+        <activity android:name=".SpecialInspectionPage" />
+        <activity android:name=".ManageUsers" />
+        <activity android:name=".TypicalInspection"></activity>
+        <activity android:name=".ReadInspections"></activity>
+        <activity android:name=".IdentifyColony" />
+        <activity android:name=".ManageUsers" />
+        <activity android:name=".Functions" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CreateColonyPage"
+            android:label="Create Colony" />
+        <activity
+            android:name=".ColonyManagementPage"
+            android:label="Colony Management" />
+        <activity
+            android:name=".EditColonyPage"
+            android:label="Edit Colony" />
+        <activity android:name=".DeleteColonyPage"
+            android:label="Delete Colony" />
+        <activity  android:name=".UpdateWithServer"/>
+    </application>
+
+</manifest>

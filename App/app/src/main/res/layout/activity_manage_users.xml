@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".ManageUsers">
+
+    <TextView
+        android:id="@+id/manage_users"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/manage_users"
+        android:layout_centerHorizontal="true"
+        android:textSize="60dp"
+        android:textStyle="bold"
+        android:textColor="#09AB4D"/>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swiperefresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/add_user"
+        android:layout_below="@+id/manage_users"
+        android:layout_marginLeft="20pt"
+        android:layout_marginRight="20pt" >
+        <ListView
+            android:id="@+id/UserListview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <EditText
+        android:id="@+id/add_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/back"
+        android:layout_marginLeft="20pt"
+        android:hint="@string/add_user"
+        android:textSize="50dp" />
+
+    <Button
+        android:id="@+id/add_btn"
+        android:layout_width="234dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/back"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="20pt"
+        android:layout_marginBottom="9dp"
+        android:layout_toRightOf="@id/add_user"
+        android:background="#09AB4D"
+        android:text="@string/add"
+        android:textColor="#ffffff"
+        android:textSize="50dp" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/back"
+        android:textSize="40dp"
+        android:background="#09AB4D"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

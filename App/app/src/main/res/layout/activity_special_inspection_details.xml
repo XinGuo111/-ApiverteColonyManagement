@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SpecialInspectionDetails"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/special_inspection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/special_inspection"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:textColor="#09AB4D" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/si_inspector"
+            android:textSize="30sp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="40dp" />
+
+        <TextView
+            android:id="@+id/si_inspector_text"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="50dp"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/si_colony"
+            android:textSize="30sp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:id="@+id/si_colony_text"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="50dp"
+            android:textSize="30sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/si_harvest"
+            android:textSize="30sp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:id="@+id/si_harvest_text"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="10dp"
+            android:textSize="30sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/si_feeds"
+            android:textSize="30sp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:id="@+id/si_feeds_text"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="10dp"
+            android:textSize="30sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/si_treatments"
+            android:textSize="30sp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:id="@+id/si_treatments_text"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="10dp"
+            android:textSize="30sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/si_details"
+            android:textSize="30sp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:id="@+id/si_details_text"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="10dp"
+            android:textSize="30sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/si_wintering"
+            android:textSize="30sp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:id="@+id/si_wintering_text"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="10dp"
+            android:textSize="30sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/si_growth"
+            android:textSize="30sp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+            android:id="@+id/si_growth_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="20dp"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/save_to_database"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/save_to_database"
+        android:textSize="40sp"
+        android:background="#09AB4D"
+        android:textColor="#ffffff"/>
+
+    <Button
+        android:id="@+id/delete_from_database"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/delete_from_database"
+        android:textSize="40sp"
+        android:background="#09AB4D"
+        android:textColor="#ffffff"/>
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/back"
+        android:textSize="40sp"
+        android:background="#09AB4D"
+        android:textColor="#ffffff"/>
+
+</LinearLayout>

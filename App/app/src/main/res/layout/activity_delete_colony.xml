@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center">
+
+    <TextView
+        android:id="@+id/editPageHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="35sp"
+        android:textColor="#09AB4D"
+        android:text="@string/deleteColonyPageHeader"
+        />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/deleteSelectedColony"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/colonyPagesSelectedColony"
+            android:textSize="20sp"
+            android:textColor="#09AB4D"
+            android:layout_columnWeight="1"/>
+
+        <Spinner
+            android:id="@+id/deleteSelectColonySpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_columnWeight="5"/>
+
+        <TextView
+            android:id="@+id/deleteInfoHeader"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/deleteInfoHeader"
+            android:textSize="25sp"
+            android:textColor="#09AB4D"
+            android:layout_columnSpan="2"/>
+
+
+        <TextView
+            android:id="@+id/deleteColonyCreatedBy"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/deleteCreatedBy"
+            android:textSize="20sp"
+            android:textColor="#09AB4D"
+            android:layout_columnWeight="1" />
+
+        <TextView
+            android:id="@+id/deleteColonyCreatedByData"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text=""
+            android:textSize="20sp"
+            android:textColor="#09AB4D"
+            android:layout_columnWeight="5" />
+
+        <TextView
+            android:id="@+id/deleteColonyCreatedDate"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/deleteCreatedDate"
+            android:textSize="20sp"
+            android:textColor="#09AB4D"
+            android:layout_columnWeight="1" />
+
+        <TextView
+            android:id="@+id/deleteColonyCreatedDateData"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text=""
+            android:textSize="20sp"
+            android:textColor="#09AB4D"
+            android:layout_columnWeight="5" />
+
+        <TextView
+            android:id="@+id/deleteColonyArea"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/deleteAreaName"
+            android:textSize="20sp"
+            android:textColor="#09AB4D"
+            android:layout_columnWeight="1" />
+
+        <TextView
+            android:id="@+id/deleteColonyAreaData"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text=""
+            android:textSize="20sp"
+            android:textColor="#09AB4D"
+            android:layout_columnWeight="5" />
+
+        <TextView
+            android:id="@+id/deleteColonyHost"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/deleteHostName"
+            android:textSize="20sp"
+            android:textColor="#09AB4D"
+            android:layout_columnWeight="1" />
+
+        <TextView
+            android:id="@+id/deleteColonyHostData"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text=""
+            android:textSize="20sp"
+            android:textColor="#09AB4D"
+            android:layout_columnWeight="5" />
+
+    </GridLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+
+        <Button
+            android:id="@+id/deleteColonySubmitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#09AB4D"
+            android:padding="5dp"
+            android:text="@string/colonyPagesSubmitButton"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/deleteColonyReturnButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#09AB4D"
+            android:padding="5dp"
+            android:text="@string/colonyPagesReturnButton"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
